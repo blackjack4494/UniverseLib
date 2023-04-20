@@ -52,7 +52,7 @@ namespace UniverseLib
         private delegate IntPtr d_LoadFromMemory(IntPtr binary, uint crc);
 
         [HideFromIl2Cpp]
-        public static AssetBundle LoadFromMemory(byte[] binary, uint crc = 0)
+        public static AssetBundle LoadFromMemory(Il2CppStructArray<byte> binary, uint crc = 0)
         {
             IntPtr ptr = ICallManager.GetICallUnreliable<d_LoadFromMemory>(
                     "UnityEngine.AssetBundle::LoadFromMemory_Internal",

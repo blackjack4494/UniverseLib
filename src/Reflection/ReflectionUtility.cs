@@ -106,7 +106,11 @@ namespace UniverseLib
                     try
                     {
                         // load and resolve the assembly's types.
+#if INTEROP
+                        Assembly asm = Assembly.LoadFrom(dllPath);
+#else
                         Assembly asm = Assembly.LoadFile(dllPath);
+#endif
                         asm.GetTypes();
                     }
                     catch { }

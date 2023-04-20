@@ -47,8 +47,8 @@
         <PackageReference Include="Il2CppAssemblyUnhollower.BaseLib" Version="0.4.22" IncludeAssets="compile" />
     </ItemGroup>
     <ItemGroup Condition="'$(Configuration)' == 'Release_IL2CPP_Interop'">
-        <PackageReference Include="Il2CppInterop.Common" Version="1.0.0" />
-        <PackageReference Include="Il2CppInterop.Runtime" Version="1.0.0" />
+        <PackageReference Include="Il2CppInterop.Common" Version="1.1.3" />
+        <PackageReference Include="Il2CppInterop.Runtime" Version="1.1.3" />
     </ItemGroup>
     <!-- Assembly References -->
     <ItemGroup Condition="'$(Configuration)' == 'Release_Mono'">
@@ -61,6 +61,7 @@
             <Private>False</Private>
         </Reference>
     </ItemGroup>
+    <!--
     <ItemGroup Condition="'$(Configuration)' == 'Release_IL2CPP_Unhollower'">
         <Reference Include="Il2Cppmscorlib">
             <HintPath>..\lib\unhollowed\Il2Cppmscorlib.dll</HintPath>
@@ -99,6 +100,7 @@
             <Private>False</Private>
         </Reference>
     </ItemGroup>
+    -->
     <ItemGroup Condition="'$(Configuration)' == 'Release_IL2CPP_Interop'">
         <Reference Include="Il2Cppmscorlib">
             <HintPath>..\lib\interop\Il2Cppmscorlib.dll</HintPath>
